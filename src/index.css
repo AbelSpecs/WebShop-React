@@ -1,13 +1,416 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* INDEX O INICIO */
+h1{
+    margin: 40px 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h2{
+    font-weight: 700;
+    color: white;
+    font-weight: 100;
+}
+
+.logo h1 a span{
+    color: #1abc9c;
+}
+
+.gray-text, .link{
+    color: gray;
+}
+
+.link:hover{
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+.col-md-6{
+    width: 50%;
+}
+
+.bg-light{
+    background-color:rgb(244, 244, 244) !important
+}
+
+.header-area{
+    background-color: rgb(244, 244, 244);
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: none;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+}
+
+.navbar-toggler {
+    margin: 0 auto;
+}
+
+.cart{
+    border: 1px solid #ddd;
+    float: right;
+    font-size: 18px;
+    margin-top: 40px;
+    padding: 10px;
+    position: relative;
+}
+
+.flex-center, .center{
+    justify-content: center;
+}
+
+.zigzag-bottom{
+    background: none repeat scroll 0 0 #1abc9c;
+    height: 165px;
+    left: -5%;
+    position: absolute;
+    transform: rotate(3deg);
+    width: 108%;
+    
+    
+}
+
+.zigzag-bottom-inverse{
+    background: none repeat scroll 0 0 #1abc9c;
+    height: 165px;
+    left: -5%;
+    position: absolute;
+    transform: rotate(-3deg);
+    width: 108%;
+}
+
+.latest-product > .carousel > .carousel-indicators{
+    bottom: -35px !important;
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
+
+.mt-5{
+    margin-top: 4rem !important;
+}
+
+.col-md-4 {
+    flex: none;
+    max-width: none;
+}
+
+.owl-stage{
+    display: flex !important;
+}
+
+.carousel-inner{
+    z-index: 1;
+}
+
+.d-flex.ml-3{
+    height: 400px;
+}
+
+.s-product:hover .hover::after{
+    left: 0;
+}
+
+.product-container{
+    position: relative;
+}
+
+.hover{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.hover::after{
+    background: none repeat scroll 0 0 #000;
+    content: "";
+    height: 100%;
+    left: -100%;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: .4s;
+}
+
+.hover button{
+    /* background: none repeat scroll 0 0 #1abc9c; */
+    /* border-radius: 5px; */
+    color: white;
+    display: block;
+    font-size: 15px;
+    left: 25%;
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    /* border: 1px solid #1abc9c; */
+    border: none;
+    width: 50%;
+    z-index: 99;
+    transition: .4s;
+    top: -25%;
+    
+}
+
+.btn-outline-success{
+    background-color: none;
+    
+}
+
+.btn-outline-success:hover{
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+.hover button.card-button{
+    top: -25%;
+    
+}
+
+.s-product:hover .hover button.card-button{
+    top: 40%;
+}
+
+.btn-container{
+    margin-bottom: -10px;
+}
+
+.card-button{
+    justify-content: center;
+}
+
+.owl-dots{
+    display: none;
+}
+
+.products {
+    margin-top: 100px;
+}
+
+.productos, .producto{
+    margin-bottom: 31px;
+    overflow: hidden;
+}
+
+.producto h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.thumb{
+    float: left;
+    height: 90px;
+    margin-right: 15px;
+    width: 100px;
+}
+
+.text-color {
+    color: black;
+    font-weight: 700;
+}
+
+.cart-amount, .prices ins{
+    color: #1abc9c;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.site-branding-area, .carousel, .main-articles, .top-products, .header-area, .green-div{
+    position: relative;
+    overflow: hidden !important;
+} 
+
+.green-div{
+    height: 190px;
+}
+
+.margin-bottom{
+    margin-bottom: -165px;
+}
+
+.margin-top{
+    margin-top: -130px;
+}
+
+/** SHOP **/
+
+.title-container{
+    background: url(./components/shop/assets/crossword.png) repeat scroll 0 0 #1ABC9C;
+    height: 150px;
+}
+
+.tienda-title{
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    font-size: 35px;
+    padding: 50px;
+}
+
+.individual-product{
+    margin-bottom: 50px;
+}
+
+.title-product{
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.title-product > a{
+    color: #1abc9c !important;
+}
+
+.product-price > ins{
+    color: #1abc9c !important;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.btn-add {
+    background-color: #1abc9c;
+    border: none;
+}
+
+.img-shop{
+    width: 100%;
+}
+
+.MuiPagination-ul{
+    justify-content: center;
+    color: #1abc9c;
+}
+
+/** SEARCH PRODUCT**/
+
+.search-bar-title{
+    color: #3dc6ab;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.search-input{
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.form-btn{
+    background: none repeat scroll 0 0 #1abc9c;
+}
+
+.form-btn:hover{
+    color: #fff;
+    background-color: #1abc9c;
+    border-color: #1abc9c !important;
+}
+
+.breadcroumb-menu{
+    margin-bottom: 20px;
+}
+
+.product-section{
+    flex: none;
+    max-width: none;
+}
+
+.product-main-images{
+    margin-bottom: 20px;
+}
+
+.p-name{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    margin: 0 0 15px;
+    color: #000;
+}
+
+.product-image{
+    width: 100%;
+    max-width: 100%;
+}
+
+.product-price{
+    margin-bottom: 25px;
+}
+
+.quantity-form{
+    margin-bottom: 25px;
+}
+
+.quantity-container{
+    float: left;
+    margin-right: 15px;
+}
+
+.quantity{
+    border: 1px solid #1abc9c;
+    padding: 5px;
+    width: 50px;
+}
+
+.add-btn{
+    background: none repeat scroll 0 0 #1abc9c;
+    border: medium none;
+    color: #fff;
+    padding: 11px 20px;
+    text-transform: uppercase;
+}
+
+.tab{
+    border-bottom: 1px solid #ddd;
+    list-style: outside none none;
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+}
+
+.tab-content{
+    margin-bottom: 30px;
+}
+
+.tab li{
+    display: inline-block;
+}
+
+.tab li.active{
+    background: none repeat scroll 0 0 #1abc9c;
+}
+
+.btn-descrip{
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+}
+
+.title-descrip, .descrip, .p-name{
+    color: #000;
+    font-family: 'Titillium Web', sans-serif !important;
+}
+
+.title-descrip{
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    margin: 0 0 15px;
+}
+
+.descrip{
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
+.fade{
+    opacity: 1;
 }
