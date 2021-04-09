@@ -31,6 +31,8 @@ export const NavBar = () => {
                       <NavLink activeClassName= "active" className="nav-item nav-link" to="/about">About</NavLink>
                       <NavLink activeClassName= "active" className="nav-item nav-link" to="/shop">Shop</NavLink>
                       <NavLink activeClassName= "active" className="nav-item nav-link" to="/search">Product</NavLink>
+                      <NavLink activeClassName= "active" className="nav-item nav-link" to="/login">Iniciar Sesión</NavLink>
+                      <NavLink activeClassName= "active" className="nav-item nav-link" to="/register">Registro</NavLink>
                       {/* <NavLink activeClassName= "active" className="nav-item nav-link" to="#">Pricing</NavLink> */}
                       
                     </div>

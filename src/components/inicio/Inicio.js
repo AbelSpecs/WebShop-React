@@ -4,11 +4,18 @@ import { Logo } from './Logo';
 import {Carousell} from './Carousell'
 import { OwlCarousell } from './OwlCarousell';
 import { Topproducts } from './Topproducts';
- 
+import {useDispatch, useSelector} from 'react-redux'; 
 
 
 
 export const Inicio = () => {
+
+    const dispatch = useDispatch();
+
+    /* useEffect(() => {
+        
+        
+    }, []) */
 
     return (
         <>

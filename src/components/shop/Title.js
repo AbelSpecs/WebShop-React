@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Title = () => {
+export const Title = ({title}) => {
     return (
         <>
             <div className="title-container">
@@ -8,7 +8,7 @@ export const Title = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="section-title">
-                                <h2 className="tienda-title">Tienda de Articulos</h2>
+                                <h2 className="tienda-title">{title}</h2>
                             </div>
                         </div>
                     </div>

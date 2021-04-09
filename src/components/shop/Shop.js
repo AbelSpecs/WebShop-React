@@ -33,7 +33,7 @@ export const Shop = () => {
             <Logo />
         
             {/* titulo de seccion */}
-            <Title />
+            <Title title="Tienda"/>
 
             {/* seccion de tienda de productos */}
             <Products />

@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { AppRouter } from './routers/AppRouter';
 import './index.css';
+import { WebshopApp } from './WebshopApp';
 /* import 'bootstrap/dist/css/bootstrap.min.css'; */
 
 
 
 ReactDOM.render(
-  <AppRouter className="principal"/>,
+  <WebshopApp className="principal"/>,
   document.getElementById('root')
 );
 

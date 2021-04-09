@@ -1,13 +1,19 @@
 import React from 'react'
 import { Title } from '../shop/Title';
 import { Logo } from '../inicio/Logo';
+import {useDispatch, useSelector} from 'react-redux';
 
 export const SearchProduct = () => {
+
+    const {activeProduct} = useSelector(state => state.product)
+
+    const {name, price} = activeProduct;
+
     return (
         <>
             <Logo />
 
-            <Title />
+            <Title title="Producto"/>
 
             <div className="product-area mt-5">
                 <div className="container">
@@ -42,10 +48,10 @@ export const SearchProduct = () => {
                                     <div className="col-sm-6">
                                         <div className="product-container">
                                             <h2 className="p-name">
-                                                Producto
+                                                {name}
                                             </h2>
                                             <div className="product-price">
-                                                <ins>$400</ins>
+                                                <ins>{price}</ins>
                                         
                                             </div>
                                             <form className="quantity-form">
